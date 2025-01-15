@@ -1,5 +1,5 @@
-from functools import *
-from threading import *
+import functools
+import threading
 
 class Cache:
     def __init__(self, depth):
