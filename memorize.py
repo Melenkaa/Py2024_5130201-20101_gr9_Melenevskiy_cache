@@ -17,7 +17,7 @@ class Cache:
                 self.cache.pop(next(iter(self.cache)))
             self.cache[key] = value
 
-def memorize(depth):
+def memorize(depth=1000):
     def decorator(fn):
         cache = Cache(depth)
 
